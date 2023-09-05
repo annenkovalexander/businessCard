@@ -1,0 +1,249 @@
+.mobile {
+	height: 100vh;
+	margin: 0 auto;
+	background: #171717;
+	overflow: hidden scroll;
+
+	position: relative;
+	transition: 0.3s all ease-in-out;
+
+	.header {
+		width: 100vw;
+		min-width: 100%;
+		padding: 36px 20px 0 8px;
+		.profile_picture {
+			width: 36px;
+			height: 36px;
+			span {
+				font-size: 16px;
+			}
+		}
+		.back {
+			transition: 0.3s all ease-in-out;
+			&.go_back {
+				display: flex;
+			}
+		}
+	}
+	&_wrapper {
+		&_first {
+			width: inherit;
+			min-height: 100vh;
+			max-height: max-content;
+			background: #171717;
+			border-radius: 24px 24px 0px 0px;
+		}
+		&_second {
+			background: linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0.1) 0%,
+					rgba(1, 182, 255, 0) 20%
+				),
+				#080808;
+			backdrop-filter: blur(25px);
+			border-radius: 24px 24px 0px 0px;
+			width: inherit;
+			max-height: max-content;
+			min-height: inherit;
+		}
+		&_third {
+			border-radius: 24px 24px 0px 0px;
+			background: linear-gradient(
+					26.05deg,
+					rgba(15, 153, 24, 0.14) 0%,
+					rgba(8, 8, 8, 0) 72.24%
+				),
+				radial-gradient(
+					100% 100% at 0% 100%,
+					rgba(0, 170, 255, 0.12) 0%,
+					rgba(8, 8, 8, 0) 99.69%
+				),
+				radial-gradient(
+					74.68% 149.35% at 50% 149.35%,
+					rgba(0, 102, 255, 0.3) 0%,
+					rgba(8, 8, 8, 0) 99.69%
+				);
+			max-height: max-content;
+			min-height: inherit;
+			width: 100vw;
+			margin: 0 auto;
+		}
+		&_fourth {
+			width: inherit;
+			max-height: max-content;
+			min-height: inherit;
+			padding-top: 14px;
+			padding-bottom: 80px;
+		}
+	}
+	.dots_wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 6px 4px;
+		width: 84px;
+		margin: 0 auto;
+		list-style-type: none;
+		transition: 0.3s all ease-in-out;
+		.dot {
+			transition: 0.3s all ease-in-out;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.2);
+			&.active {
+				transition: 0.3s all ease-in-out;
+				background-color: #fff;
+				width: 24px;
+				border-radius: 3px;
+			}
+		}
+	}
+}
+
+@media (max-width: 374px) {
+	.mobile {
+		&_first_page {
+			width: 100%;
+			padding: 0 10px;
+			&_promo {
+				.promo_header {
+					img {
+						width: 80px;
+						height: 80px;
+					}
+				}
+				.promo_wrapper {
+					span {
+						font-size: 18px;
+						&:first-child {
+							font-size: 24px;
+						}
+					}
+				}
+			}
+			&_btns {
+				.btns {
+					padding-left: 48px;
+				}
+				.btn {
+					&:nth-child(2) {
+						margin-left: 60px;
+					}
+					&:nth-child(3) {
+						margin-left: 115px;
+					}
+				}
+			}
+		}
+		&_second_page {
+			padding: 0 10px;
+			width: 100%;
+			height: 730px;
+			h2.colored {
+				width: 100%;
+			}
+			.first_text_block {
+				flex-direction: column;
+				.right {
+					display: flex;
+					flex-direction: column;
+					margin-top: 10px;
+					.top {
+						flex-direction: row;
+					}
+					.bottom .subtitle {
+						margin-left: 0;
+						text-align: left;
+					}
+					.colored:not(.blue) {
+						margin-left: 0;
+						margin-right: 10px;
+					}
+				}
+			}
+			.second_text_block .colored {
+				font-size: 16px;
+			}
+		}
+		&_third_page {
+			width: 100%;
+			padding: 0 10px;
+			height: 900px;
+			span {
+				font-size: 18px;
+				line-height: 26px;
+			}
+			.text_block {
+				&_fourth .right {
+					margin-left: 22px;
+					span.subtitle {
+						font-size: 16px;
+					}
+				}
+				&_fifth {
+					margin-top: 15px;
+					.colored.blue {
+						font-size: 18px;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+		&_fourth_page {
+			width: 100%;
+			height: 800px;
+			padding: 0 10px;
+			h2.colored {
+				width: 100%;
+			}
+			.text_wrapper_first::before {
+				right: 15px;
+			}
+			.news_img {
+				width: 100%;
+				height: 345px;
+			}
+		}
+		&_fifth_page {
+			width: 100%;
+			padding: 0 8px 0 12px;
+			h2.colored {
+				width: 100%;
+			}
+			&_wrapper {
+				margin-top: 20px;
+				.first,
+				.second {
+					.text {
+						span {
+							font-size: 20px;
+						}
+						.colored {
+							font-size: 22px;
+						}
+						.subtitle {
+							font-size: 16px;
+						}
+					}
+					.icon_with_text {
+						margin-left: 88px;
+						span {
+							font-size: 20px;
+						}
+					}
+				}
+				.second .icon_with_text {
+					margin-left: 0;
+					span:nth-of-type(1) {
+						padding-right: 30px;
+					}
+				}
+			}
+			.bottom_wrapper .bottom_header span {
+				font-size: 22px;
+				text-align: center;
+			}
+		}
+	}
+}

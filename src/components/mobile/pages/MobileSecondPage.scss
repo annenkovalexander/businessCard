@@ -1,0 +1,153 @@
+.mobile_second_page {
+	background-image: url(https://cdn.sberdevices.ru/temp/sberfriend/bussines_card/mobile_mask.png);
+	background-size: 100%;
+	background-position: center 80px;
+	background-repeat: no-repeat;
+	padding: 0 20px;
+	position: relative;
+	min-height: 80vh;
+	max-height: 750px;
+	width: 375px;
+	margin: 0 auto;
+	margin-top: 20px;
+	transition: 0.3s all ease-out;
+
+	&_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+	h2 {
+		font-family: 'SB Sans Text';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 30px;
+		letter-spacing: -0.019em;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+		&.colored {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 30px;
+			width: 328px;
+			margin-top: 24px;
+		}
+	}
+	.first_text_block {
+		display: flex;
+		margin-top: 76px;
+		padding-left: 56px;
+		.colored {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 30px;
+			&:not(.blue) {
+				margin-left: 30px;
+			}
+		}
+		.blue {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 30px;
+			position: relative;
+			&:before {
+				content: '';
+				background: url(https://cdn.sberdevices.ru/temp/sberfriend/Helpful/Icon_26.png)
+					center center / cover no-repeat;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				position: absolute;
+				left: -56px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		.top,
+		.bottom {
+			display: flex;
+			flex-direction: column;
+			.subtitle {
+				text-align: right;
+			}
+		}
+		.bottom .subtitle {
+			margin-left: -22px;
+		}
+	}
+	.second_text_block {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+		.colored {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 30px;
+			position: relative;
+			&:first-child:after {
+				content: '';
+				background: url(https://cdn.sberdevices.ru/temp/sberfriend/card/Group_55.png)
+					center center / cover no-repeat;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				position: absolute;
+				right: -42px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			&.bold {
+				font-size: 20px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.third_text_block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 100%;
+		margin-top: 56px;
+		position: relative;
+		.colored {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 30px;
+			&:first-child:before {
+				content: '';
+				background: url(https://cdn.sberdevices.ru/temp/sberfriend/Helpful/Icon_26.png)
+					center center / cover no-repeat;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				position: absolute;
+				right: 150px;
+				top: 25%;
+				transform: translateY(-50%);
+			}
+			&:first-child:after {
+				content: '';
+				background: url(https://cdn.sberdevices.ru/temp/sberfriend/card/Group_55.png)
+					center center / cover no-repeat;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				position: absolute;
+				right: 100px;
+				top: 25%;
+				transform: translateY(-50%);
+			}
+			&:last-child {
+				margin-top: 13px;
+			}
+		}
+	}
+	.subtitle {
+		font-size: 16px;
+		font-weight: 600;
+	}
+}

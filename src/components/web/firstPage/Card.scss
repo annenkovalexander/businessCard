@@ -1,0 +1,57 @@
+.card {
+	position: absolute;
+	cursor: pointer;
+	&:active,
+	&:hover {
+		transform: scale(1.1);
+		transition: 0.3s all ease;
+	}
+	&.disabled {
+		transform: unset;
+		cursor: unset;
+	}
+	&.meeting {
+		top: 0;
+		left: 38px;
+		width: 209px;
+		height: 209px;
+	}
+	&.setting {
+		top: 78px;
+		right: 0;
+		width: 177px;
+		height: 177px;
+	}
+	&.estimate {
+		bottom: 0;
+		right: 33px;
+		width: 209px;
+		height: 209px;
+	}
+	&.play {
+		bottom: 78px;
+		left: 0;
+		width: 177px;
+		height: 177px;
+	}
+	span {
+		color: white;
+		position: absolute;
+		left: 27px;
+		bottom: 40px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		&.subtitle {
+			color: #ffffff80;
+			bottom: 15px;
+		}
+	}
+	img {
+		position: absolute;
+		top: 27px;
+		right: 27px;
+		width: 39px;
+		height: 39px;
+	}
+}

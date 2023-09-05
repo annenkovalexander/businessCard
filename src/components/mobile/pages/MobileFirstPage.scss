@@ -1,0 +1,101 @@
+.mobile_first_page {
+	background-image: url(https://cdn.sberdevices.ru/temp/sberfriend/bussines_card/mobile_mask.png);
+	background-size: 100%;
+	background-position: center 80px;
+	background-repeat: no-repeat;
+	padding: 0 20px;
+	min-height: 80vh;
+	max-height: 790px;
+	width: 375px;
+	margin: 0 auto;
+	margin-top: 20px;
+	&_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+	h2 {
+		font-family: 'SB Sans Text';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 30px;
+		letter-spacing: -0.019em;
+		color: #fff;
+		text-align: center;
+	}
+	&_promo {
+		display: flex;
+		align-items: center;
+		margin-top: 30px;
+		.promo_header {
+			img {
+				width: 97px;
+				height: 97px;
+				display: block;
+			}
+		}
+		.promo_wrapper {
+			display: flex;
+			flex-direction: column;
+			margin-left: 20px;
+			span {
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 25px;
+				&:first-child {
+					font-size: 26px;
+				}
+			}
+			span:not(.colored) {
+				margin-top: 16px;
+			}
+		}
+	}
+	&_btns {
+		margin-top: 145px;
+		.btns {
+			padding-left: 28px;
+			height: 294px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.btn {
+			font-family: 'SB Sans Text';
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 30px;
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			img {
+				width: 40px;
+				height: 40px;
+				margin-right: 16px;
+			}
+			span {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 30px;
+				background-clip: none;
+				&.subtitle {
+					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+			&:nth-child(2) {
+				margin-left: 90px;
+				align-items: flex-start;
+				span.subtitle {
+					color: #ffffff80;
+				}
+			}
+			&:nth-child(3) {
+				margin-left: 150px;
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'SB Sans Text', -apple-system, BlinkMacSystemFont,
+		'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'SB Sans Text';
+	scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 25px;
+	color: rgba(255, 255, 255, 0.96);
+	text-align: center;
+}
+span {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 30px;
+	color: #fff;
+	font-family: 'SB Sans Text';
+}
+span.subtitle {
+	color: rgba(255, 255, 255, 0.56) !important;
+}
+
+.colored {
+	background: linear-gradient(
+		93.97deg,
+		#1dd13b 6.49%,
+		#27c6e5 93.51%
+	) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	background-clip: text !important;
+}
+
+.colored.blue {
+	background: linear-gradient(
+		93.97deg,
+		#50c1fa 6.49%,
+		#adadff 93.51%
+	) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	background-clip: text !important;
+}

@@ -1,0 +1,89 @@
+.wrong_answer {
+	background: linear-gradient(
+		178.15deg,
+		rgba(0, 0, 0, 0) 1.57%,
+		rgba(0, 0, 0, 0.0086472) 7.86%,
+		rgba(0, 0, 0, 0.03551) 14.39%,
+		rgba(0, 0, 0, 0.0816599) 20.92%,
+		rgba(0, 0, 0, 0.147411) 28.12%,
+		rgba(0, 0, 0, 0.231775) 33.98%,
+		rgba(0, 0, 0, 0.331884) 40.25%,
+		rgba(0, 0, 0, 0.442691) 46.64%,
+		rgba(0, 0, 0, 0.557309) 52.37%,
+		rgba(0, 0, 0, 0.668116) 58.37%,
+		rgba(0, 0, 0, 0.768225) 64.77%,
+		rgba(0, 0, 0, 0.852589) 71.56%,
+		rgba(0, 0, 0, 0.91834) 77.96%,
+		rgba(0, 0, 0, 0.96449) 85.02%,
+		rgba(0, 0, 0, 0.991353) 91.95%,
+		#000000 98.44%
+	);
+	height: 486px;
+	color: #fff;
+	left: 0;
+	right: 0;
+	bottom: -100%;
+	padding-top: 290px;
+	position: absolute;
+	z-index: 10;
+	display: none;
+	animation: wrongAnsAnimation 3s ease-in-out;
+	&.active {
+		animation: wrongAnsAnimation 3s ease-in-out;
+		display: block;
+	}
+	&_text {
+		overflow: hidden;
+		span {
+			font-family: 'SB Sans Text';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 40px;
+			text-align: center;
+			letter-spacing: -0.022em;
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 576px) {
+	.wrong_answer {
+		height: 362px;
+		padding-top: 100px;
+		background: linear-gradient(
+			140.26deg,
+			#232323 32.26%,
+			#060303 108.91%
+		);
+		&_text span {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 30px;
+		}
+	}
+}
+@keyframes wrongAnsAnimation {
+	0% {
+		bottom: -100%;
+		display: none;
+	}
+	25% {
+		bottom: 0;
+		display: block;
+	}
+	50% {
+		bottom: 0;
+		display: block;
+	}
+	75% {
+		bottom: 0;
+		display: block;
+	}
+	100% {
+		bottom: -100%;
+		display: none;
+	}
+}

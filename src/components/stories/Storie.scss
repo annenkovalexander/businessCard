@@ -1,0 +1,60 @@
+.storie {
+	width: 257px;
+	height: 557px;
+	margin: 0 auto;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	z-index: 2;
+	padding: 19px 11px 0 11px;
+	&_top_wrapper {
+		position: relative;
+	}
+	&_bottom_wrapper {
+		margin-top: 72px;
+	}
+	&_header {
+		text-align: center;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+	&_maintxt {
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		margin-top: 311px;
+		margin-left: 8px;
+	}
+	&_subtxt {
+		font-size: 14px;
+		letter-spacing: -0.02em;
+		margin-left: 8px;
+		margin-top: 2px;
+	}
+	&_btn {
+		width: 235px;
+		height: 28px;
+		background: #fff;
+		border: none;
+		outline: none;
+		border-radius: 9px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 16px;
+		color: #000000;
+		margin-top: 12px;
+	}
+}
+
+@keyframes progressAnimation {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}

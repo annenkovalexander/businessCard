@@ -1,0 +1,42 @@
+.promo {
+	display: flex;
+	padding-bottom: 22px;
+	flex-direction: column;
+	width: max-content;
+	margin-right: 125px;
+	margin-top: 110px;
+	margin-left: 30px;
+	.promo_header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		img {
+			width: 104px;
+			height: 104px;
+			margin: 0 59px 20px 0;
+		}
+	}
+	span {
+		color: white;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 30px;
+	}
+	.promo_wrapper {
+		display: flex;
+		flex-direction: column;
+		padding-left: 18px;
+	}
+	.colored {
+		background: linear-gradient(
+			93.97deg,
+			#1dd13b 6.49%,
+			#27c6e5 93.51%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+}

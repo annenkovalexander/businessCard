@@ -1,0 +1,98 @@
+.mobile_fourth_page {
+	background-image: url(https://cdn.sberdevices.ru/temp/sberfriend/bussines_card/mobile_mask.png);
+	background-size: 100%;
+	background-position: center 80px;
+	background-repeat: no-repeat;
+	padding: 0 20px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 375px;
+	min-height: 850px;
+	max-height: 85vh;
+	&_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+	h2 {
+		font-family: 'SB Sans Text';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 30px;
+		letter-spacing: -0.019em;
+		color: #fff;
+		text-align: center;
+		margin: 0 auto;
+		&.colored {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 30px;
+			width: 328px;
+			margin-top: 24px;
+		}
+	}
+	.text_wrapper {
+		&_first {
+			margin-top: 30px;
+			position: relative;
+			width: 100%;
+			&::before {
+				content: '';
+				width: 60px;
+				height: 60px;
+				background: #fff;
+				border-radius: 6px;
+				right: 50px;
+				top: -5px;
+				transform: rotate(-14.37deg);
+				position: absolute;
+			}
+			span {
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 36px;
+			}
+			.white_text {
+				display: flex;
+				flex-direction: column;
+				span {
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			.icon_with_text {
+				display: flex;
+				align-items: center;
+				margin-top: 12px;
+				img {
+					width: 40px;
+					height: 40px;
+					margin-right: 16px;
+				}
+			}
+		}
+		&_second {
+			margin-top: 21px;
+			display: flex;
+			flex-direction: column;
+			span {
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 30px;
+				.colored {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.news_img {
+		width: 341px;
+		height: 390px;
+		margin-top: 12px;
+		border-radius: 20px;
+	}
+}

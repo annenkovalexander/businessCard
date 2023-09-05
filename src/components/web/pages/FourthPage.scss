@@ -1,0 +1,213 @@
+.fourth_page {
+	width: 100vw;
+	height: 100%;
+	background-image: url('https://cdn.sberdevices.ru/temp/sberfriend/bussines_card/phone_3.png');
+	background-position-x: 120%;
+	background-position-y: 5%;
+	background-size: 68%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 38px 97px 0 97px;
+	overflow: hidden;
+	position: relative;
+	h2 {
+		margin-top: 27px;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 25px;
+		&:last-of-type {
+			font-size: 20px;
+			color: #fff;
+			line-height: 33px;
+			letter-spacing: -0.019em;
+		}
+	}
+	.texts_wrapper {
+		margin-top: 109px;
+		&::before {
+			content: '';
+			background-image: url('https://cdn.sberdevices.ru/temp/sberfriend/bussines_card/lol.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			width: 380px;
+			height: 437px;
+			left: -15px;
+			bottom: -130px;
+			transform: rotate(149deg);
+			z-index: 0;
+			overflow: hidden;
+		}
+		.text_with_icon {
+			display: flex;
+			flex-direction: column;
+			cursor: pointer;
+			max-width: max-content;
+			font-size: 28px;
+			line-height: 36px;
+			font-weight: 600;
+			&_wrapper {
+				display: flex;
+				align-items: center;
+				margin-bottom: 15px;
+			}
+			&:hover,
+			&:active {
+				img {
+					transform: scale(1.1);
+				}
+			}
+			&:last-of-type {
+				margin-top: 75px;
+				margin-left: 90px;
+			}
+			img {
+				width: 40px;
+				height: 40px;
+				margin-right: 45px;
+				transition: 0.3s all ease;
+			}
+			span {
+				text-align: left;
+				color: #fff;
+				font-weight: 600;
+				font-size: 28px;
+				line-height: 36px;
+				&.with_ml {
+					margin-left: 130px;
+				}
+				& .subtitle {
+					color: #ffffff80 !important;
+					-webkit-text-fill-color: unset;
+				}
+			}
+		}
+	}
+	.next_page {
+		bottom: 10px;
+	}
+}
+
+@media (min-width: 1201px) {
+	.fourth_page {
+		width: 1200px;
+		margin: 0 auto;
+		background-position-y: -2%;
+		& .texts_wrapper {
+			margin-top: 107px;
+		}
+	}
+}
+
+@media (max-width: 993px) {
+	.fourth_page {
+		padding: 38px 48px 0 48px;
+		background-position-x: 113%;
+		background-position-y: -260%;
+		background-size: 60%;
+		h1 {
+			font-size: 24px;
+		}
+		h2 {
+			font-size: 20px;
+			margin-top: 16px;
+			&:last-of-type {
+				margin-top: 8px;
+			}
+		}
+		.texts_wrapper {
+			.text_with_icon {
+				font-size: 24px;
+				line-height: 30px;
+				img {
+					margin-right: 24px;
+				}
+				&:last-of-type {
+					margin-top: 32px;
+				}
+				span {
+					text-align: center;
+					font-size: 24px;
+					&.with_ml {
+						margin-left: 110px;
+						line-height: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.fourth_page {
+		background-position-x: 111%;
+		background-position-y: 495%;
+		background-size: 85%;
+		padding: 38px 24px 0 24px;
+		&_wrapper {
+			.texts_wrapper {
+				margin-top: 40px;
+				&::before {
+					left: -155px;
+					top: 22em;
+					transform: rotate(166deg);
+				}
+				.text_with_icon {
+					flex-direction: row;
+					align-items: center;
+					&_wrapper {
+						margin-bottom: 0;
+					}
+					span {
+						margin-left: 5px;
+						font-size: 20px;
+						text-align: left;
+						&.with_ml {
+							margin-left: 0;
+						}
+					}
+					&:last-of-type {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-height: 900px) {
+	.fourth_page {
+		background-position-y: -60%;
+		background-position-x: 125%;
+	}
+}
+@media (max-height: 799px) {
+	.fourth_page {
+		background-position-y: -10%;
+		background-position-x: 95%;
+		background-size: 48%;
+		.texts_wrapper {
+			margin-top: 30px;
+			&::before {
+				background-size: 53%;
+				top: 251px;
+				left: -110px;
+			}
+			.text_with_icon:last-of-type {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+@media (max-height: 600px) {
+	.fourth_page {
+		background-position-x: 100%;
+		background-position-y: 0%;
+		background-size: 43%;
+		.texts_wrapper {
+			margin-top: 42px;
+			.text_with_icon:last-of-type {
+				margin-top: 50px;
+			}
+		}
+	}
+}

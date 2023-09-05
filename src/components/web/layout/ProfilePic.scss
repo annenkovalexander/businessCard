@@ -1,0 +1,28 @@
+.profile_picture {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
+	margin-top: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		36.19deg,
+		#197d61 1.15%,
+		#21a038 47.5%,
+		#96dd12 95.82%
+	);
+	overflow: hidden;
+	padding: 5px;
+	align-self: center;
+}
+
+@media (max-width: 767px) {
+	.header {
+		.profile_picture {
+			margin-top: 0;
+		}
+	}
+}

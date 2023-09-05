@@ -1,0 +1,153 @@
+.second_page {
+	width: 100%;
+	height: 100%;
+	padding: 155px 69px 0 102px;
+	background-image: url('https://cdn.sberdevices.ru/temp/sberfriend/bussines_card/phone_1_blur.png');
+	background-position-x: 130%;
+	background-position-y: -36%;
+	background-size: 66%;
+	background-repeat: no-repeat;
+	position: relative;
+	h2 {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 25px;
+		letter-spacing: -0.019em;
+		color: rgba(255, 255, 255, 0.96);
+		margin-top: 0;
+	}
+	.text {
+		width: 471px;
+		height: 90px;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 45px;
+		letter-spacing: -0.019em;
+		margin-top: 52px;
+	}
+	.next_page {
+		bottom: 10px;
+	}
+}
+@media (min-width: 1301px) {
+	.second_page {
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 993px) {
+	.second_page {
+		margin: 0 auto;
+		padding: 128px 54px;
+		background-position-y: -14%;
+		h2 {
+			font-size: 28px;
+		}
+		.text {
+			font-size: 28px;
+			width: 430px;
+			margin-top: 30px;
+		}
+		&__cards {
+			height: 190px;
+			width: 600px;
+			padding: 0 32px;
+		}
+		&__card {
+			width: 160px;
+			height: 160px;
+			padding: 104px 0 18px 0;
+			&_text {
+				font-size: 17px;
+				margin-left: 44px;
+			}
+			&:nth-of-type(2) span {
+				width: 78px;
+				margin-left: 66px;
+				font-size: 15px;
+				letter-spacing: 0.02em;
+			}
+			&:last-child span {
+				padding: 0;
+				font-size: 13px;
+				margin: 6px 22px 0 6px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.second_page {
+		padding: 128px 24px 0;
+		background-position-x: 144%;
+		background-size: 73%;
+		background-position-y: 3%;
+		.text {
+			font-size: 24px;
+			width: 350px;
+			line-height: 37px;
+		}
+		&__cards {
+			margin: 96px 0;
+			width: 500px;
+			height: 170px;
+			justify-content: space-around;
+			padding: 0 18px;
+		}
+		&__card {
+			width: 130px;
+			height: 130px;
+			padding-top: 80px;
+			&_text {
+				font-size: 14px;
+			}
+			span {
+				margin-left: 38px;
+			}
+			&:nth-of-type(2) span {
+				margin-left: 48px;
+			}
+		}
+	}
+}
+
+@media (min-height: 900px) {
+	.second_page {
+		background-position-x: 141%;
+		background-size: 70%;
+	}
+}
+@media (max-height: 799px) {
+	.second_page {
+		padding-top: 100px;
+		background-position-y: -165%;
+		background-size: 63%;
+		&__cards {
+			margin-top: 40px;
+			height: 200px;
+		}
+	}
+	.next_page {
+		bottom: 0 !important;
+	}
+}
+
+@media (max-height: 700px) {
+	.second_page {
+		background-size: 50%;
+		background-position-y: -55%;
+	}
+}
+@media (max-height: 600px) {
+	.second_page {
+		background-size: 50%;
+		background-position-y: -75%;
+		background-position-x: 115%;
+		.text {
+			margin-top: 36px;
+		}
+		&__cards {
+			margin-top: 30px;
+		}
+	}
+}

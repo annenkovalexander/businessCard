@@ -1,0 +1,38 @@
+.second_page__card {
+	background: blue;
+	width: 177px;
+	height: 177px;
+	border-radius: 24px;
+	padding-bottom: 18px;
+	padding-top: 121px;
+	padding: 121px 0 18px 0;
+	border: none;
+	outline: none;
+	&:active,
+	&:hover {
+		transform: scale(1.1);
+		transition: 0.3s all ease;
+	}
+	&_text {
+		display: block;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 20px;
+		color: #fff;
+		text-align: center;
+		text-align: center;
+		margin-left: 42px;
+		font-family: 'SB Sans Text';
+	}
+	&:nth-of-type(2) span {
+		width: 85px;
+		letter-spacing: -0.019em;
+		margin-left: 69px;
+		font-size: 15px;
+	}
+	&:last-child span {
+		padding: 1px;
+		margin: 0 22px 0 8px;
+		font-size: 14px;
+	}
+}
